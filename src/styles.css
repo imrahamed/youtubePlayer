@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+#loginWrapper {
+    padding: 20% 40%;
+    text-align: center;
+}
+
+.ant-page-header-back-icon{
+    display: none;
+}
+.logout{
+    float: right;
+    margin-top: -3%;
+}
+.pull-right{
+float: right;
+}
+.delete{
+    margin-top: 0.8em;
+
+}
+
+#videoWrapper{
+    text-align: center;
+}
+
+.title{
+    text-align: left;
+    margin: 36px;
+    margin-top: 46px;
+    font-weight: bold;
+}
+
+#empty{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
