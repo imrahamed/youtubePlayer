@@ -83,8 +83,12 @@ export class HomeComponent implements OnInit {
 
   deleteEntry(i) {
     console.log(i);
-    // this.data.splice(i, 1);
-    // localStorage.setItem('libray', JSON.stringify(this.data));
+    this.data.splice(i, 1);
+    localStorage.setItem('libray', JSON.stringify(this.data));
+    if (this.player) this.player.stopVideo()
+    this.currentIndex = 0;
+    this.playvideo(this.data[this.currentIndex].id);
+    
   }
   playEntry(i) {
     this.currentIndex = i;
